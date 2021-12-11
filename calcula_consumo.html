@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+	
+
+	function mostra (karol){
+		document.write("**************");
+		pulalinha()
+
+		document.write(karol);
+		pulalinha()
+	}
+
+function pulalinha(){
+		document.write("<br>");
+	}
+
+
+var tanque = 40;
+var caminhoComGasolina = 480;
+var consumoDeGasolina = 480/40;
+var caminhoComAlcool = 300
+
+
+	mostra("<h3>Álcool ou Gasolina?</h3>" );
+    mostra("meu consumo é de " + (caminhoComGasolina/tanque));
+    mostra("meu consumo com alccol é de " + (caminhoComAlcool/tanque) );
+
+</script>

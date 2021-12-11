@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+	
+	function pulalinha(){
+
+			document.write("<br>");
+	}
+
+function mostra(frase){
+		pulalinha();
+
+		document.write(frase);
+
+		pulalinha();
+}
+
+
+var quantosAnosPassaram = 2021;
+
+
+var idadeMediaQuandoTemFilhos = 28;
+var anoAtual = 2021;
+var quantidadeDeGeracoes = Math.round((anoAtual-1500)/idadeMediaQuandoTemFilhos);
+
+mostra(quantidadeDeGeracoes);
+
+mostra("Ja se passaram ");
+mostra(Math.round((quantosAnosPassaram-1500)/idadeMediaQuandoTemFilhos));
+mostra("geraçoes");
+</script>

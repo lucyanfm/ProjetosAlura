@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulalinha (){
+			document.write("<Br>");
+	}	
+
+	function mostra (frase) {
+			document.write(frase);
+			pulalinha();  
+	}
+    var contador = 1;
+    var numeroPensado = Math.round(Math.random() * 10);
+	//var numeroPensado = 5;
+	
+
+
+    while(contador <= 3){
+	var chute = parseInt(prompt("Digite seu chute! "));
+
+	if (chute == numeroPensado){
+			mostra("Você acertou! ");
+			contador = 3;
+    } else {
+    	alert("Voce errou, tente de novo. Lembrando voce tem 3 tentativas, voce errou "+ contador + " vez ");
+		contador++
+	}
+	if (contador > 3) {
+			alert("voce ultrapassou o numero de tentativas o numero  pensado foi " + numeroPensado )
+		}
+}
+    
+
+
+</script>

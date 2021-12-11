@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script>
+
+	var user = "karoline";
+	var senha = 100616;
+
+	
+
+	for (var tentativas = 3; tentativas > 0 ; tentativas--) {
+		var checkUser = prompt("DIGITE SEU USER : ");
+	    var checkSenha = parseInt(prompt("DIGITE SUA SENHA : "));
+		
+		if (checkUser == user && checkSenha == senha) {
+			alert("BEM VINDO " + user);
+
+			break;
+		}
+		if (checkUser != user && checkSenha != senha) {
+			alert("Voce errou ! restam ainda " +(tentativas - 1) + " tentativas");
+		}
+		
+	}
+</script>
